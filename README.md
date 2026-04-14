@@ -34,8 +34,9 @@ It preserves the visual language of the design system — dark premium tones, la
 ## Deploy to GitHub Pages
 
 1. Push this repository to GitHub.
-2. In repository Settings, enable GitHub Pages from the `main` branch.
-3. Use the project site URL from GitHub Pages.
+2. The workflow publishes the site to the `gh-pages` branch.
+3. In repository Settings > Pages, set the source to `gh-pages` branch and `/` root if needed.
+4. Use the project site URL from GitHub Pages.
 
 ## Notes
 

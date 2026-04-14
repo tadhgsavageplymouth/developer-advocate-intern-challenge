@@ -1,4 +1,4 @@
-name: GitHub Pages
+name: Deploy GitHub Pages
 
 on:
   push:
@@ -6,27 +6,29 @@ on:
       - main
 
 permissions:
-  pages: write
   contents: read
+  pages: write
 
 jobs:
   deploy:
-    concurrency:
-      group: github-pages
-      cancel-in-progress: true
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v4
+      - name: Prepare publish directory
+        run: |
+          rm -rf site
+          mkdir site
+          cp index.html styles.css script.js site/
+          cp -R assets site/
 
-      - name: Upload artifacts for GitHub Pages
-        uses: actions/upload-pages-artifact@v4
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: .
-
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v1
+          publish_dir: ./site
+          publish_branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          allow_empty_commit: true
+          keep_files: false
+          commit_message: 'Deploy static site to GitHub Pages'
