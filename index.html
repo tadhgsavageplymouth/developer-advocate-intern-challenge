@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weaviate Developer Advocate Intern Challenge</title>
+    <title>Weaviate Multimodal RAG</title>
     <meta
       name="description"
-      content="A premium companion microsite for the Weaviate Developer Advocate Intern Challenge PDF submission."
+      content="Premium companion microsite for the Weaviate Developer Advocate Intern Challenge."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,34 +17,57 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-shell site-shell--header">
-        <a class="brand" href="#hero">
-          <div class="brand-mark">
-            <img src="assets/logos/WeaviateLogo.svg" alt="Weaviate logo" />
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="header-row">
+          <a class="brand" href="#hero" aria-label="Weaviate">
+            <img
+              class="brand-logo"
+              src="assets/logos/WeaviateLogo.svg"
+              alt="Weaviate logo"
+            />
+          </a>
+        </div>
+      </header>
+
+      <main class="hero" id="hero">
+        <div class="hero-container">
+          <div class="hero-copy">
+            <p class="hero-eyebrow">Weaviate Developer Advocate Intern Challenge</p>
+            <h1 class="hero-title">
+              Making Multimodal
+              <span class="hero-title__break">RAG Click</span>
+            </h1>
+            <p class="hero-subtitle">Why text-only pipelines fail — and how to fix them</p>
+            <p class="hero-body">
+              This companion cover page brings the PDF into a premium web-native
+              format with a tight left-aligned text column, refined spacing, and
+              developer-grade visual polish.
+            </p>
           </div>
-        </a>
-      </div>
-    </header>
 
-    <main>
-      <section id="hero" class="hero-section">
-        <div class="site-shell">
-          <!-- Minimal hero, background image provides the visual focus -->
-        </div>
-      </section>
-    </main>
+          <div class="hero-task-row">
+            <a href="#" class="glass-card">
+              <span class="glass-card__label">Task 1</span>
+              <h3 class="glass-card__title">Community Response</h3>
+            </a>
+            <a href="#" class="glass-card">
+              <span class="glass-card__label">Task 2</span>
+              <h3 class="glass-card__title">RAG Breakdown</h3>
+            </a>
+            <a href="#" class="glass-card">
+              <span class="glass-card__label">Task 3</span>
+              <h3 class="glass-card__title">Beyond the Challenge</h3>
+            </a>
+          </div>
 
-    <footer class="site-footer">
-      <div class="site-shell footer-grid">
-        <div></div>
-        <div class="footer-links">
-          <a href="assets/pdf/submission.pdf" target="_blank" rel="noopener">Download the PDF</a>
-          <a href="https://github.com/<your-username>/developer-advocate-intern-challenge" target="_blank" rel="noopener">View repo</a>
-          <a href="https://www.linkedin.com/in/<your-profile>" target="_blank" rel="noopener">LinkedIn</a>
+          <div class="hero-meta">
+            <span>Developer Advocate Intern Challenge Submission</span>
+            <span>Prepared by: Tadhg Savage</span>
+            <span>April 2026</span>
+          </div>
         </div>
-      </div>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
   </body>
