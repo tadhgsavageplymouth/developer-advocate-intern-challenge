@@ -9,6 +9,9 @@ permissions:
   contents: read
   pages: write
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -21,7 +24,6 @@ jobs:
           rm -rf site
           mkdir site
           cp index.html styles.css script.js site/
-          cp -R assets site/
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
