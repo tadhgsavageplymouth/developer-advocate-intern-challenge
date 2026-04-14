@@ -4,7 +4,12 @@
   /* Typography */
   --font-heading: "Plus Jakarta Sans", sans-serif;
   --font-body: "Inter", sans-serif;
+  --font-mono: "Menlo", monospace;
   --font-display: "Fredoka", sans-serif;
+
+  --weight-bold: 700;
+  --weight-medium: 500;
+  --weight-regular: 400;
 
   /* Core brand */
   --color-brand-green: #61BD73;
@@ -88,6 +93,64 @@ h3,
 .logo-wordmark,
 .display-text {
   font-family: var(--font-display);
+}
+
+p {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.h1 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  font-size: clamp(3rem, 3.8vw, 4.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.5px;
+  margin: 1rem 0 1.2rem;
+}
+
+.h2 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.3px;
+  margin: 0.8rem 0 1rem;
+}
+
+.h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-medium);
+  font-size: 1.2rem;
+  line-height: 1.55;
+  letter-spacing: -0.03em;
+  margin: 0 0 1rem;
+}
+
+.body {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.body-small {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.body-strong {
+  font-weight: var(--weight-medium);
+}
+
+.code {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 img {
@@ -223,12 +286,12 @@ a.button {
   color: #b9f7c1;
 }
 
-.hero-copy h1 {
+.hero-copy .h1 {
   margin: 1rem 0 1.2rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-heading);
   font-size: clamp(3rem, 3.8vw, 4.8rem);
   line-height: 0.98;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.5px;
 }
 
 .hero-text {
@@ -374,12 +437,13 @@ a.button {
   gap: 1.75rem;
 }
 
-.section-intro h2,
-.section-intro h3 {
+.section-intro .h2 {
   margin: 0.8rem 0 1rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
   font-size: clamp(2rem, 2.5vw, 3rem);
-  letter-spacing: -0.04em;
+  line-height: 1.05;
+  letter-spacing: -0.3px;
 }
 
 .section-intro p {
@@ -446,9 +510,10 @@ a.button {
   color: var(--accent);
 }
 
-.content-card h3 {
+.content-card .h3 {
   margin: 0 0 1rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-heading);
+  font-weight: var(--weight-medium);
   font-size: 1.4rem;
 }
 
@@ -560,9 +625,10 @@ a.button {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.feature-block h3 {
+.feature-block .h3 {
   margin: 0.45rem 0 1rem;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: var(--font-heading);
+  font-weight: var(--weight-medium);
   font-size: 1.7rem;
 }
 
