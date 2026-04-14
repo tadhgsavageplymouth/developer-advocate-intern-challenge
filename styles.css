@@ -275,6 +275,71 @@ a {
   display: none;
 }
 
+.task-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: var(--space-lg);
+}
+
+.task-page__container {
+  max-width: 1280px;
+  text-align: center;
+}
+
+.task-page__eyebrow {
+  display: inline-block;
+  margin: 0 0 var(--space-md);
+  font-family: var(--font-heading);
+  font-weight: var(--weight-medium);
+  font-size: 0.88rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(122, 214, 235, 0.7);
+}
+
+.task-page__title {
+  margin: 0 0 var(--space-md);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.task-page__subtitle {
+  margin: 0 0 var(--space-2xl);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  line-height: 1.4;
+  color: var(--color-accent);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.task-card-frame {
+  background: rgba(237, 237, 237, 0.06);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  padding: var(--space-lg);
+  display: inline-block;
+  width: min(100%, 1210px);
+  max-width: 1210px;
+}
+
+.task-card-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+}
+
 @media (max-width: 1024px) {
   .hero {
     padding: var(--space-md);
@@ -294,6 +359,30 @@ a {
     max-width: 320px;
     height: 100px;
     margin: 0 auto;
+  }
+
+  .task-page {
+    padding: var(--space-md);
+  }
+
+  .task-page__container {
+    max-width: 100%;
+  }
+
+  .task-card-frame {
+    width: min(100%, 980px);
+  }
+
+  .task-page__title {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+  }
+
+  .task-page__subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+  }
+
+  .task-card-frame {
+    padding: var(--space-md);
   }
 }
 
@@ -339,5 +428,32 @@ a {
 
   .glass-card__title {
     font-size: 1rem;
+  }
+
+  .task-page {
+    padding: var(--space-sm);
+  }
+
+  .task-page__eyebrow {
+    margin-bottom: var(--space-sm);
+  }
+
+  .task-page__title {
+    font-size: clamp(2rem, 10vw, 3rem);
+    margin-bottom: var(--space-sm);
+  }
+
+  .task-page__subtitle {
+    font-size: 1rem;
+    margin-bottom: var(--space-lg);
+  }
+
+  .task-card-frame {
+    padding: var(--space-sm);
+    border-radius: 20px;
+  }
+
+  .task-card-image {
+    border-radius: 12px;
   }
 }
