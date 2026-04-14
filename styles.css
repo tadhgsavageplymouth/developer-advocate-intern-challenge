@@ -78,9 +78,8 @@ body {
   min-height: 100vh;
   font-family: var(--font-body);
   color: var(--text);
-  background: radial-gradient(circle at top left, rgba(106, 255, 172, 0.18), transparent 22%),
-    radial-gradient(circle at bottom right, rgba(122, 199, 192, 0.14), transparent 20%),
-    linear-gradient(180deg, #130c49 0%, #0c1428 100%);
+  background: linear-gradient(rgba(19, 12, 73, 0.88), rgba(10, 12, 32, 0.88)),
+    url('assets/images/integrations-background-dark.png') center / cover no-repeat;
 }
 
 h1,
@@ -261,33 +260,9 @@ a.button {
 }
 
 .hero-section {
-  padding: 4rem 0 5rem;
+  padding: 5rem 0 4rem;
   position: relative;
-}
-
-.hero-section::before,
-.hero-section::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(68px);
-  opacity: 0.45;
-}
-
-.hero-section::before {
-  width: 420px;
-  height: 420px;
-  top: -80px;
-  left: -80px;
-  background: #61bd73;
-}
-
-.hero-section::after {
-  width: 280px;
-  height: 280px;
-  right: -60px;
-  bottom: 0;
-  background: #7ad6eb;
+  min-height: 78vh;
 }
 
 .hero-grid {
