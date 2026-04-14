@@ -1,5 +1,8 @@
 :root {
   color-scheme: dark;
+  --font-heading: "Plus Jakarta Sans", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-display: "Fredoka", sans-serif;
   --bg: #130c49;
   --surface: #1a134a;
   --surface-soft: #1f1a59;
@@ -32,11 +35,23 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   color: var(--text);
   background: radial-gradient(circle at top left, rgba(106, 255, 172, 0.18), transparent 22%),
     radial-gradient(circle at bottom right, rgba(122, 199, 192, 0.14), transparent 20%),
     linear-gradient(180deg, #130c49 0%, #0c1428 100%);
+}
+
+h1,
+h2,
+h3,
+.heading {
+  font-family: var(--font-heading);
+}
+
+.logo-wordmark,
+.display-text {
+  font-family: var(--font-display);
 }
 
 img {
