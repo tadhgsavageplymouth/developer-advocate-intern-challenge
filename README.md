@@ -1,53 +1,45 @@
 # Developer Advocate Intern Challenge
 
-Interactive companion site for my Weaviate Developer Advocate Intern Challenge submission.
+A premium GitHub Pages companion microsite for the Weaviate Developer Advocate Intern Challenge PDF submission.
 
-## Overview
+## What this site is
 
-This repository contains a GitHub Pages microsite designed to accompany my PDF submission. It translates the challenge deliverables into a web-native format while preserving the visual style, clarity, and developer-focused structure of the original design.
+This repository is a static, production-ready microsite that translates the PDF submission into a modern developer-focused web experience.
 
-## What’s included
+It preserves the visual language of the design system — dark premium tones, layered cards, and strong typography — while making the content easier to scan and interact with online.
 
-* **Task 1:** Community response design and framing
-* **Task 2:** Social post concept and visual treatment
-* **Beyond the Challenge:** How I’d approach developer advocacy at Weaviate
-* **PDF companion:** Downloadable version of the original submission
+## Included sections
 
-## Design approach
+* **Intro / cover** — premium hero messaging and PDF download
+* **Community response** — native web interpretation of the conversation page
+* **Social content example** — LinkedIn-style post treatment with polished framing
+* **Beyond the challenge** — strategic thinking, future ideas, and developer advocacy direction
+* **Footer** — resource links and deploy-ready notes
 
-The site mirrors the PDF system rather than reproducing it literally. The goal was to keep the same visual language — colour palette, typography, spacing, and card treatment — while adapting the content into a cleaner, more interactive web format.
+## Files
 
-## Stack
+* `index.html` — page structure and semantic content
+* `styles.css` — design system, responsive layout, visual polish
+* `script.js` — minimal scroll behavior and nav highlight logic
+* `assets/logos/` — place Weaviate logo assets here
+* `assets/images/` — place an exported social-post preview here
+* `assets/pdf/` — place the challenge PDF here
 
-* HTML
-* CSS
-* JavaScript
-* GitHub Pages
+## How to run locally
 
-## Live site
+1. Open the repository in Visual Studio Code.
+2. Use Live Server or any static file server.
+3. Alternatively, open `index.html` directly in a browser.
 
-Add your GitHub Pages URL here.
+## Deploy to GitHub Pages
 
-## PDF submission
-
-Add the PDF path or hosted link here.
-
-## Repository structure
-
-```text
-assets/
-  logos/
-  images/
-  pdf/
-styles/
-scripts/
-index.html
-README.md
-```
+1. Push this repository to GitHub.
+2. In repository Settings, enable GitHub Pages from the `main` branch.
+3. Use the project site URL from GitHub Pages.
 
 ## Notes
 
-Assets that benefit from scalability, such as logos and simple icons, are exported as SVG. More complex compositions, such as social post mockups and layered visual cards, are exported as PNG or WebP.
+Update the placeholder links in `index.html` after adding the PDF and logo assets.
 
 ## Author
 
