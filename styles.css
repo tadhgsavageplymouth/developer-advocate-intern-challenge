@@ -331,6 +331,7 @@ a {
   display: inline-block;
   width: min(100%, 1210px);
   max-width: 1210px;
+  min-height: 400px; /* Prevent layout shift while image loads */
 }
 
 .task-card-image {
@@ -338,6 +339,12 @@ a {
   height: auto;
   border-radius: 16px;
   display: block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.task-card-image.loaded {
+  opacity: 1;
 }
 
 .task-nav {
