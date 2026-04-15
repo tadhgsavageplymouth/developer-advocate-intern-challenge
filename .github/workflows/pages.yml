@@ -23,7 +23,7 @@ jobs:
         run: |
           rm -rf site
           mkdir site
-          cp index.html styles.css script.js site/
+          cp -r *.html styles.css script.js assets site/
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
