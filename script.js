@@ -1,32 +1,28 @@
-// Image preloading and smooth reveal for task cards
-document.addEventListener('DOMContentLoaded', function() {
-  // Preload key images for smooth navigation
+document.addEventListener("DOMContentLoaded", function () {
   const imagesToPreload = [
-    'assets/images/Post_1.png',
-    'assets/images/Post_2.png',
-    'assets/images/integrations-background-dark.png'
+    "assets/images/Post_1.png",
+    "assets/images/Post_2.png",
+    "assets/images/Post_3.png",
+    "assets/images/integrations-background-dark.png"
   ];
 
-  // Preload images
-  imagesToPreload.forEach(src => {
+  imagesToPreload.forEach(function (src) {
     const img = new Image();
     img.src = src;
   });
 
-  // Handle task card image loading
-  const taskImages = document.querySelectorAll('.task-card-image');
-  taskImages.forEach(img => {
+  const taskImages = document.querySelectorAll(".task-card-image");
+
+  taskImages.forEach(function (img) {
     if (img.complete) {
-      // Image already loaded
-      img.classList.add('loaded');
+      img.classList.add("loaded");
     } else {
-      // Wait for image to load
-      img.addEventListener('load', function() {
-        img.classList.add('loaded');
+      img.addEventListener("load", function () {
+        img.classList.add("loaded");
       });
-      // Handle load errors gracefully
-      img.addEventListener('error', function() {
-        img.classList.add('loaded'); // Still show the frame even if image fails
+
+      img.addEventListener("error", function () {
+        img.classList.add("loaded");
       });
     }
   });

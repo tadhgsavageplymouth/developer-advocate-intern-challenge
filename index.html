@@ -6,7 +6,7 @@
     <title>Task 1 - Community Response</title>
     <meta
       name="description"
-      content="Task 1: Community Response - Weaviate Developer Advocate Intern Challenge."
+      content="Task 1: Community Response - A concise, practical reply to a real developer question on multimodal retrieval from Reddit."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,19 +14,22 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
-    <!-- Preload critical images -->
     <link rel="preload" as="image" href="assets/images/Post_1.png" />
-    <link rel="preload" as="image" href="assets/images/integrations-background-dark.png" />
-    <!-- Prefetch likely next pages -->
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/integrations-background-dark.png"
+    />
     <link rel="prefetch" href="task2.html" />
     <link rel="prefetch" href="task3.html" />
+    <link rel="prefetch" href="beyond.html" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="page-shell">
       <header class="site-header">
         <div class="header-row">
-          <a class="brand" href="index.html" aria-label="Weaviate">
+          <a class="brand" href="index.html" aria-label="Weaviate home">
             <img
               class="brand-logo"
               src="assets/logos/WeaviateLogo.svg"
@@ -36,33 +39,48 @@
         </div>
       </header>
 
-      <main class="hero" id="hero">
+      <main class="hero">
         <div class="hero-container">
-          <div class="task-page">
+          <section class="task-page">
             <div class="task-page__container">
-              <h1 class="task-page__title">Community Response</h1>
-              <p class="task-page__subtitle">A concise reply for a team evaluating Weaviate for multimodal retrieval</p>
-              <nav class="task-nav">
+              <h1 class="task-page__title">Task 1 - Community Response</h1>
+              <p class="task-page__subtitle">
+                A concise, practical reply to a real developer question on
+                multimodal retrieval from Reddit
+              </p>
+
+              <nav class="task-nav" aria-label="Challenge pages">
                 <ul class="task-nav__list">
-                  <li><a href="index.html" class="task-nav__link task-nav__link--active">Task 1</a></li>
-                  <li><a href="task2.html" class="task-nav__link">Task 2</a></li>
-                  <li><a href="task3.html" class="task-nav__link">Task 3</a></li>
+                  <li>
+                    <a
+                      href="index.html"
+                      class="task-nav__link task-nav__link--active"
+                      >Task 1</a
+                    >
+                  </li>
+                  <li>
+                    <a href="task2.html" class="task-nav__link">Task 2</a>
+                  </li>
+                  <li>
+                    <a href="task3.html" class="task-nav__link">Task 3</a>
+                  </li>
+                  <li>
+                    <a href="beyond.html" class="task-nav__link"
+                      >Beyond the Challenge</a
+                    >
+                  </li>
                 </ul>
               </nav>
+
               <div class="task-card-frame">
-                <img class="task-card-image" src="assets/images/Post_1.png" alt="Community Response: Multimodal RAG social post" />
+                <img
+                  class="task-card-image"
+                  src="assets/images/Post_1.png"
+                  alt="Community Response social post"
+                />
               </div>
             </div>
-          </div>
-        </div>
-      </main>
-    </div>
-
-    <script src="script.js"></script>
-  </body>
-</html>
-            </div>
-          </div>
+          </section>
         </div>
       </main>
     </div>
