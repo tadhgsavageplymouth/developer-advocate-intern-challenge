@@ -2,8 +2,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Preload key images for smooth navigation
   const imagesToPreload = [
-    'assets/images/post-1.png',
-    'assets/images/task2-social-card.png',
+    'assets/images/Post_1.png',
+    'assets/images/Post_2.png',
     'assets/images/integrations-background-dark.png'
   ];
 

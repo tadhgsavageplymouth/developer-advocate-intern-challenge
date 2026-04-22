@@ -1,0 +1,13 @@
+# Update to task2.html - Replace image with YouTube embed
+# Replace this:
+#               <img class="task-card-image" src="assets/images/Post_2.png" alt="Task 2 Social Content Card" />
+# With this:
+                <div class="youtube-shorts-container">
+                  <iframe 
+                    class="youtube-shorts-embed"
+                    src="https://www.youtube.com/embed/kRCZ6FhZCHI" 
+                    title="YouTube Shorts Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                  </iframe>
+                </div>
